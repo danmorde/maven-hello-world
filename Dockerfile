@@ -10,7 +10,7 @@ RUN echo $Container_Url
 
 RUN mkdir -p /usr/share/my-app \ 
   && cd /usr/share/my-app \
-  && curl -o app.jar.gz -u danmorde2@outlook.com:ehecs7nc67hqlla4runysdjdxogilqe6gdqiwg5l5z73suljcz2q $Container_Url \
+  && curl -o app.jar.gz -u DevopsDan@hotmail.com:ehecs7nc67hqlla4runysdjdxogilqe6gdqiwg5l5z73suljcz2q $Container_Url \
   && gunzip app.jar.gz
 
 # run application with this command line 
