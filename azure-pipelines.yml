@@ -35,4 +35,4 @@ steps:
     buildType: 'current'
     downloadType: 'single'
     itemPattern: '**/*.jar'
-    downloadPath: '$(System.ArtifactsDirectory)'
+    downloadPath: '$(Pipeline.Workspace)'
