@@ -35,4 +35,11 @@ steps:
   inputs:
     command: login
     containerRegistry: dandocker1
- 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'dandocker1'
+    command: 'build'
+    Dockerfile: 'Dockerfile'
+    repository: 'danmorde/AzureDevops'
+    tags: 'tag1'
+    arguments: '--build-arg CONTAINER_ID=$(Build.ContainerId) --build-arg REPO_URL=$(Build.Repository.Uri)'
